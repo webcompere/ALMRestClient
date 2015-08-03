@@ -1,6 +1,8 @@
 # ALMRestClient
 A .NET implementation of a basic client that can work with HP ALM SAAS's REST interface. In C# with .NET 4.5
 
+Please read https://codingcraftsman.wordpress.com/2014/04/11/hp-alm-give-it-a-rest/ for more info
+
 Depends on restsharp via NuGet.
 
 Please note, this comes without any warranty or support. It has worked for me in the past with HP ALM. If you wish to raise issues within this repo, I'll try to answer them on a best efforts basis. If you wish to collaborate on the code, then please clone and offer a pull request.
