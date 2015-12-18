@@ -25,3 +25,6 @@ You can change an item using
 The ALMItem for itemWithChangesIn has a dictionary in it, into which you can make your changes. You can either modify the one you got from GetDefects, or create a new one and just set the changes in it.
 
 ALMItem has a few getters/setters for common fields. There are other fields.
+
+To setup the test project, you will need to set a breakpoint within the test and run the following within the immediate window to set the user settings:
+new ALMClientTests.ALMClientTestConfigure().SetUpSettings("<username>","<password>","<https://HPALM Address:Port/>")

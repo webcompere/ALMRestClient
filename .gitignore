@@ -7,3 +7,5 @@
 /ALMClientTests/obj/Debug
 /ALMClient/bin/Debug
 /ALMClient/obj/Debug
+*.bak
+*.user

@@ -18,11 +18,6 @@ namespace ALMClientTests.Tests
 
 		private ALMRestClient.ALMClient wrapper;
 
-		#region Login Credentials
-
-
-		#endregion
-
 		[ClassInitialize]
 		public static void Setup(TestContext context)
 		{
@@ -81,7 +76,5 @@ namespace ALMClientTests.Tests
 
 			Assert.IsNotNull(items);
 		}
-
-
 	}
 }
