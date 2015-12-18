@@ -27,4 +27,6 @@ The ALMItem for itemWithChangesIn has a dictionary in it, into which you can mak
 ALMItem has a few getters/setters for common fields. There are other fields.
 
 To setup the test project, you will need to set a breakpoint within the test and run the following within the immediate window to set the user settings:
-new ALMClientTests.ALMClientTestConfigure().SetUpSettings("<username>","<password>","<https://HPALM Address:Port/>")
+
+    new ALMClientTests.ALMClientTestConfigure().SetUpSettings("<username>","<password>","<https://HPALM Address:Port/>")
+    
