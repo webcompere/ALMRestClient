@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+/ALMClientTests/bin/Debug
+/ALMClientTests/obj/Debug
+/ALMClient/bin/Debug
+/ALMClient/obj/Debug

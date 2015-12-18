@@ -37,14 +37,14 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="INIFileParser">
-      <HintPath>..\packages\ini-parser.2.0.2\lib\INIFileParser.dll</HintPath>
-    </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,8 +53,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ALMClient.cs" />
+    <Compile Include="ALMClientConfig.cs" />
     <Compile Include="ALMClientException.cs" />
     <Compile Include="ALMItem.cs" />
+    <Compile Include="Configuration\ALMConfiguration.cs" />
+    <Compile Include="Configuration\ALMConfigurations.cs" />
+    <Compile Include="Configuration\ALMConfigurationSection.cs" />
+    <Compile Include="Configuration\ALMConfigurationSetting.cs" />
     <Compile Include="HTMLCleanUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,7 +67,11 @@
     <None Include="ALMClient.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="App.config" />
+    <Compile Include="ALMClient.SessionManagement.cs" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
